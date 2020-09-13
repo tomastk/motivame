@@ -64,26 +64,6 @@
   <footer>
     <p>Web Development by <a href="https://github.com/tomastk">TomasTk</a> &copy; 2020</p>
   </footer>
-  
-  <script>
-  let buttonFrase = document.getElementById("generateFrase");
-
-if (buttonFrase != undefined || buttonFrase != null) {
-    let frasesAñadidas = [];
-    const generateFrase = () => {
-        let randomNumber = Math.round(Math.random() * frases.length)
-        frases[randomNumber] === undefined ? frase = frases[1] : frase = frases[randomNumber]
-        document.getElementById("frase").innerHTML = `
-        <i class="fas fa-quote-left quote-left"></i>
-        ${frase}
-        <i class="fas fa-quote-right quote-right"></i>
-        `
-    } 
-    buttonFrase.addEventListener("click", () => {
-        generateFrase();
-    })
-}
-  </script>
  <script src="scripts/main.js"></script>
 </body>
 </html>
